@@ -1,0 +1,48 @@
+[
+    {
+        "name": "Wolven silver sword",
+        "description": "Witcher gear Silver sword (Level 14)",
+        "imageName": "wolven_silver_sword",
+        "category": ".sword",
+        "additionalInfo": "Tier: Witcher gear, Type: Silver sword, Level Req.: 14, Source: Craft, Weight: 1.71, Base: 367, Effect(s): +5%Signintensity+5% Adrenaline Point gain+5% Chance to cause bleeding+20% Bonus experience frommonsters, Slots: 1, Damage: 229-279, Diagram: Wolven silver sword, Craftsman: Amateurblacksmith, Item ID: Wolf School silver sword",
+        "components": [
+            "Leather scraps",
+            "Silver ingot",
+            "Fifth essence"
+        ]
+    },
+    {
+        "name": "Wolven steel sword",
+        "description": "Witcher gear Steel sword (Level 14)",
+        "imageName": "wolven_steel_sword",
+        "category": ".sword",
+        "additionalInfo": "Tier: Witcher gear, Type: Steel sword, Level Req.: 14, Source: Craft, Weight: 1.71, Base: 216, Effect(s): +5%Signintensity+5% Adrenaline Point gain+5% Chance to cause bleeding+5% Bonus experience fromhumansandnonhumans, Slots: 1, Damage: 140-172, Diagram: Wolven steel sword, Craftsman: Amateurblacksmith, Item ID: Wolf School steel sword",
+        "components": [
+            "Leather scraps",
+            "Steel ingot",
+            "Fifth essence"
+        ]
+    },
+    {
+        "name": "Wolven silver sword - enhanced",
+        "description": "Witcher gear Silver sword (Level 21)",
+        "imageName": "wolven_silver_sword___enhanced",
+        "category": ".sword",
+        "additionalInfo": "Tier: Witcher gear, Type: Silver sword, Level Req.: 21, Source: Craft, Weight: 1.61, Base: 481, Effect(s): +6%Signintensity+6% Adrenaline Point gain+6% Chance to cause bleeding+20% Bonus experience frommonsters, Slots: 2, Damage: 292-356, Diagram: Wolven silver sword - enhanced, Craftsman: Journeymanblacksmith, Item ID: Wolf School silver sword 1",
+        "components": [
+            "Leather straps",
+            "Meteorite silver ingot"
+        ]
+    },
+    {
+        "name": "Wolven steel sword - enhanced",
+        "description": "Witcher gear Steel sword (Level 21)",
+        "imageName": "wolven_steel_sword___enhanced",
+        "category": ".sword",
+        "additionalInfo": "Tier: Witcher gear, Type: Steel sword, Level Req.: 21, Source: Craft, Weight: 2.26, Base: 311, Effect(s): +6%Signintensity+6% Adrenaline Point gain+6% Chance to cause bleeding+5% Bonus experience fromhumansandnonhumans, Slots: 2, Damage: 191-233, Diagram: Wolven steel sword - enhanced, Craftsman: Journeymanblacksmith, Item ID: Wolf School steel sword 1",
+        "components": [
+            "Leather scraps",
+            "Dark steel ingot"
+        ]
+    }
+]

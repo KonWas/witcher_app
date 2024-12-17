@@ -1,0 +1,27 @@
+[
+    {
+        "name": "Swallow",
+        "description": "A common witcher potion that accelerates Vitality regeneration.",
+        "imageName": "potion_swallow",
+        "category": ".alchemy",
+        "additionalInfo": "A staple witcher potion that grants improved regeneration.\nClass: Potion,\nVariations: Enhanced Swallow, Superior Swallow,\nOccurrence: Commonly brewed by witchers,\nLoot: -",
+        "components": [
+            "Dwarven spirit",
+            "Celandine",
+            "Drowner brain"
+        ]
+    },
+    {
+        "name": "Thunderbolt",
+        "description": "A witcher potion that significantly increases attack power.",
+        "imageName": "potion_thunderbolt",
+        "category": ".alchemy",
+        "additionalInfo": "A widely-used witcher potion that bolsters attack damage.\nClass: Potion,\nVariations: Enhanced Thunderbolt, Superior Thunderbolt,\nOccurrence: Commonly brewed by witchers,\nLoot: -",
+        "components": [
+            "Dwarven spirit",
+            "Ribleaf",
+            "Ghoul's blood"
+        ]
+    }
+]
+

@@ -1,0 +1,100 @@
+[
+    {
+        "name": "Wolven armor",
+        "description": "Witcher gear Medium armor (Level 14)",
+        "imageName": "wolven_armor",
+        "category": ".armor",
+        "additionalInfo": "Tier: Witcher gear,\nType: Medium armor,\nLevel Req.: 14,\nSource: Craft,\nWeight: 3.35,\nBase: 378,\nEffect(s):\n\t+5% Adrenaline Point gain\n\t+5% Resistance to piercing damage\n\t+5% Resistance to bludgeoning damage\n\t+10% Resistance to slashing damage\n\t+12% Resistance to damage from monsters(15% beforePatch 4.0),\nSlots: 1,\nArmor: 105,\nDiagram: Wolven armor,\nCraftsman: Amateurarmorer,\nItem ID: Wolf Armor",
+        "components": [
+            "Hardened leather",
+            "Dark steel plate",
+            "Silver plate"
+        ]
+    },
+    {
+        "name": "Wolven boots",
+        "description": "Witcher gear Medium armor (Level 14)",
+        "imageName": "wolven_boots",
+        "category": ".armor",
+        "additionalInfo": "Tier: Witcher gear, Type: Medium armor, Level Req.: 14, Source: Craft, Weight: 1.22, Base: 214, Effect(s): +5% Attack power+1% Resistance to piercing damage+1% Resistance to bludgeoning damage+2% Resistance to slashing damage+2% Resistance to damage frommonsters, Slots: 0, Armor: 37, Diagram: Wolven boots, Craftsman: Amateurarmorer, Item ID: Wolf Boots 1",
+        "components": [
+            "Cured leather",
+            "Dark steel plate",
+            "Silver ingot",
+            "Monster egg"
+        ]
+    },
+    {
+        "name": "Wolven gauntlets",
+        "description": "Witcher gear Medium armor (Level 14)",
+        "imageName": "wolven_gauntlets",
+        "category": ".armor",
+        "additionalInfo": "Tier: Witcher gear, Type: Medium armor, Level Req.: 14, Source: Craft, Weight: 0.82, Base: 192, Effect(s): +5%Signintensity+1% Resistance to piercing damage+2% Resistance to slashing damage+2% Resistance to damage frommonsters+5% Resistance toelementaldamage, Slots: 0, Armor: 33, Diagram: Wolven gauntlets, Craftsman: Amateurarmorer, Item ID: Wolf Gloves 1",
+        "components": [
+            "Cured leather",
+            "Dark steel plate",
+            "Silver ingot"
+        ]
+    },
+    {
+        "name": "Wolven trousers",
+        "description": "Witcher gear Medium armor (Level 14)",
+        "imageName": "wolven_trousers",
+        "category": ".armor",
+        "additionalInfo": "Tier: Witcher gear, Type: Medium armor, Level Req.: 14, Source: Craft, Weight: 1.30, Base: 238, Effect(s): +5% Attack power+5%Signintensity+5% Resistance to slashing damage+5% Resistance to damage frommonsters(7% beforePatch 4.0)+17% Resistance toelementaldamage, Slots: 0, Armor: 37, Diagram: Wolven trousers, Craftsman: Amateurarmorer, Item ID: Wolf Pants 1",
+        "components": [
+            "Cured leather",
+            "Dark steel plate",
+            "Silver ingot"
+        ]
+    },
+    {
+        "name": "Enhanced Wolven armor",
+        "description": "Witcher gear Medium armor (Level 21)",
+        "imageName": "enhanced_wolven_armor",
+        "category": ".armor",
+        "additionalInfo": "Tier: Witcher gear, Type: Medium armor, Level Req.: 21, Source: Craft, Weight: 3.70, Base: 402, Effect(s): +10% Adrenaline Point gain+8% Resistance to piercing damage+8% Resistance to bludgeoning damage+14% Resistance to slashing damage+16% Resistance to damage frommonsters(20% beforePatch 4.0), Slots: 2, Armor: 140, Diagram: Enhanced Wolven armor, Craftsman: Journeymanarmorer, Item ID: Wolf Armor 1",
+        "components": [
+            "Hardened leather",
+            "Dark steel plate",
+            "Silver plate"
+        ]
+    },
+    {
+        "name": "Enhanced Wolven boots",
+        "description": "Witcher gear Medium armor (Level 21)",
+        "imageName": "enhanced_wolven_boots",
+        "category": ".armor",
+        "additionalInfo": "Tier: Witcher gear, Type: Medium armor, Level Req.: 21, Source: Craft, Weight: 1.22, Base: 220, Effect(s): +6% Attack power+2% Resistance to piercing damage+2% Resistance to bludgeoning damage+3% Resistance to slashing damage+2% Resistance to damage frommonsters(3% beforePatch 4.0), Slots: 0, Armor: 51, Diagram: Enhanced Wolven boots, Craftsman: Journeymanarmorer, Item ID: Wolf Boots 2",
+        "components": [
+            "Cured leather",
+            "Dark steel plate",
+            "Silver ingot",
+            "Monster egg"
+        ]
+    },
+    {
+        "name": "Enhanced Wolven gauntlets",
+        "description": "Witcher gear Medium armor (Level 21)",
+        "imageName": "enhanced_wolven_gauntlets",
+        "category": ".armor",
+        "additionalInfo": "Tier: Witcher gear, Type: Medium armor, Level Req.: 21, Source: Craft, Weight: 0.82, Base: 195, Effect(s): +6%Signintensity+2% Resistance to piercing damage+3% Resistance to slashing damage+2% Resistance to damage frommonsters(3% beforePatch 4.0)+6% Resistance toelementaldamage, Slots: 0, Armor: 51, Diagram: Enhanced Wolven gauntlets, Craftsman: Journeymanarmorer, Item ID: Wolf Gloves 2",
+        "components": [
+            "Cured leather",
+            "Dark steel plate",
+            "Silver ingot"
+        ]
+    },
+    {
+        "name": "Enhanced Wolven trousers",
+        "description": "Witcher gear Medium armor (Level 21)",
+        "imageName": "enhanced_wolven_trousers",
+        "category": ".armor",
+        "additionalInfo": "Tier: Witcher gear, Type: Medium armor, Level Req.: 21, Source: Craft, Weight: 1.30, Base: 238, Effect(s): +6% Attack power+6%Signintensity+6% Resistance to slashing damage+5% Resistance to damage frommonsters(7% beforePatch 4.0)+19% Resistance toelementaldamage, Slots: 1, Armor: 51, Diagram: Enhanced Wolven trousers, Craftsman: Journeymanarmorer, Item ID: Wolf Pants 2",
+        "components": [
+            "Cured leather",
+            "Dark steel plate",
+            "Silver ingot"
+        ]
+    }
+]

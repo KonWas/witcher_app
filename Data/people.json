@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Geralt of Rivia",
+        "description": "Geralt of Rivia, a legendary witcher known for his unparalleled swordsmanship, alchemical knowledge, and use of witcher Signs. He maintains a neutral stance in political conflicts and tirelessly hunts monsters to uphold his professional code.",
+        "imageName": "geralt",
+        "category": ".people",
+        "additionalInfo": "Class: Witcher,\nStats: Master swordsman, skilled alchemist, proficient in Signs,\nOccurrence: Encountered throughout the Northern Realms (Velen, Novigrad, Skellige, Toussaint),\nAssociations: Connected to the School of the Wolf, allies include Yennefer, Triss, Ciri, Zoltan, Dandelion,\nNotable Quests: 'The Battle of Kaer Morhen', 'Something Ends, Something Begins'",
+        "components": ["Kaer Morhen"]
+    },
+    {
+        "name": "Yennefer of Vengerberg",
+        "description": "Yennefer, a powerful and intelligent sorceress renowned for her sharp wit, political acumen, and profound magical abilities. Closely bonded with Geralt, she navigates courts and conflicts, often playing a pivotal role in shaping critical events.",
+        "imageName": "yennefer",
+        "category": ".people",
+        "additionalInfo": "Class: Sorceress,\nStats: Expert in arcane arts, adept at diplomacy and intrigue,\nOccurrence: Most commonly encountered in Skellige (Kaer Trolde region), also seen in Velen and occasionally in White Orchard,\nAssociations: Linked to the Lodge of Sorceresses, close connections with Geralt and Ciri,\nNotable Quests: 'The King is Dead – Long Live the King', 'Last Wish'",
+        "components": ["Skellige"]
+    },
+    {
+        "name": "Ciri",
+        "description": "Cirilla Fiona Elen Riannon, known as Ciri, is a Child of the Elder Blood, gifted with extraordinary powers allowing her to teleport across space and time. Raised and trained by Geralt and the witchers at Kaer Morhen, she plays a central role in the world’s fate.",
+        "imageName": "ciri",
+        "category": ".people",
+        "additionalInfo": "Class: Elder Blood descendant,\nStats: Skilled swordfighter, innate magical abilities, unparalleled speed and agility,\nOccurrence: Appears in key narrative segments, journeying through Velen, Novigrad, Skellige, and beyond,\nAssociations: Ties to Geralt, Yennefer, Triss, and the Witcher School of the Wolf,\nNotable Quests: 'Ugly Baby', 'Battle Preparations', 'On Thin Ice'",
+        "components": ["Novigrad"]
+    }
+]

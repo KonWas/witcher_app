@@ -28,10 +28,14 @@ struct RegionMap: View {
                         presentationMode.wrappedValue.dismiss()
                     }) {
                         Image(systemName: "arrow.left")
-                            .foregroundColor(.white)
-                            .padding()
-                            .background(Color.black.opacity(0.7))
-                            .cornerRadius(12)
+                            .foregroundColor(Color(red: 1, green: 0.94, blue: 0.74).opacity(0.70))
+                            .frame(width: 40, height: 40)
+                            .background(Color.black.opacity(0.30))
+                            .cornerRadius(50)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 50)
+                                    .stroke(Color(red: 1, green: 0.94, blue: 0.74).opacity(0.70), lineWidth: 0.50)
+                            )
                     }
                     Spacer()
                 }

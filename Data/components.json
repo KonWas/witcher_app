@@ -1,0 +1,322 @@
+[
+    {
+        "name": "Chitinous shell",
+        "description": "A hard shell harvested from insectoid monsters, prized by craftsmen for its durability.",
+        "imageName": "chitinous_shell",
+        "category": ".crafting",
+        "additionalInfo": "Often obtained from creatures like endregas or arachasae. Used as a crafting component in armors, providing extra resilience.",
+        "components": null
+    },
+    {
+        "name": "Copper ore",
+        "description": "A lump of raw copper ore used as a base material in forging lesser metals.",
+        "imageName": "copper_ore",
+        "category": ".crafting",
+        "additionalInfo": "Sourced from mines or purchased from merchants. Often smelted into copper ingots for crafting lower-tier weapons and armor.",
+        "components": null
+    },
+    {
+        "name": "Cured draconid leather",
+        "description": "Leather treated from draconid hides, known for its exceptional strength.",
+        "imageName": "cured_draconid_leather",
+        "category": ".crafting",
+        "additionalInfo": "Crafted from draconid hides after proper curing. Highly valued in the production of superior witcher gear.",
+        "components": null
+    },
+    {
+        "name": "Cured leather",
+        "description": "Leather that has undergone a curing process to increase its durability.",
+        "imageName": "cured_leather",
+        "category": ".crafting",
+        "additionalInfo": "A staple material for crafting various types of armor and straps. Easily obtained and widely used.",
+        "components": null
+    },
+    {
+        "name": "Dark steel ingot",
+        "description": "A hardened ingot forged from rare steel alloys, known for its remarkable hardness.",
+        "imageName": "dark_steel_ingot",
+        "category": ".crafting",
+        "additionalInfo": "Used to craft advanced weapons and armor, including witcher gear upgrades.",
+        "components": null
+    },
+    {
+        "name": "Dark steel plate",
+        "description": "A plate forged from dark steel offering exceptional structural integrity.",
+        "imageName": "dark_steel_plate",
+        "category": ".crafting",
+        "additionalInfo": "Employed in high-quality armor and blade crafting, prized by master blacksmiths.",
+        "components": null
+    },
+    {
+        "name": "Dimeritium ore",
+        "description": "A rare ore that disrupts magic, highly prized in anti-magical equipment.",
+        "imageName": "dimeritium_ore",
+        "category": ".crafting",
+        "additionalInfo": "Refined into dimeritium ingots or plates, essential for crafting gear resistant to magical effects.",
+        "components": null
+    },
+    {
+        "name": "Enriched dimeritium ore",
+        "description": "A refined form of dimeritium ore with even greater anti-magical properties.",
+        "imageName": "enriched_dimeritium_ore",
+        "category": ".crafting",
+        "additionalInfo": "Key for forging top-tier witcher gear offering heightened resistance to spells.",
+        "components": null
+    },
+    {
+        "name": "Fifth essence",
+        "description": "A mysterious alchemical substance enhancing advanced crafting processes.",
+        "imageName": "fifth_essence",
+        "category": ".crafting",
+        "additionalInfo": "Used in complex alchemical formulas and in forging special gear with unique properties.",
+        "components": null
+    },
+    {
+        "name": "Glowing ore",
+        "description": "An ore that emits a faint luminescence, used in special forging recipes.",
+        "imageName": "glowing_ore",
+        "category": ".crafting",
+        "additionalInfo": "Sought by master craftsmen to create unique, high-quality items and rare upgrades.",
+        "components": null
+    },
+    {
+        "name": "Glowing ore ingot",
+        "description": "An ingot smelted from glowing ore, retaining its gentle radiance.",
+        "imageName": "glowing_ore_ingot",
+        "category": ".crafting",
+        "additionalInfo": "Refined for forging exceptional gear, sometimes with subtle magical affinities.",
+        "components": null
+    },
+    {
+        "name": "Gold ore",
+        "description": "A valuable ore refined into gold ingots for jewelry and special gear.",
+        "imageName": "gold_ore",
+        "category": ".crafting",
+        "additionalInfo": "Highly prized by merchants. Used to craft ornate weapons, armor accents, and certain alchemical items.",
+        "components": null
+    },
+    {
+        "name": "Hardened leather",
+        "description": "Leather chemically treated to greatly increase its toughness and resilience.",
+        "imageName": "hardened_leather",
+        "category": ".crafting",
+        "additionalInfo": "Favored in making advanced armor components, providing better defense than standard cured leather.",
+        "components": null
+    },
+    {
+        "name": "Infused dust",
+        "description": "A fine dust imbued with magical or elemental energies.",
+        "imageName": "infused_dust",
+        "category": ".crafting",
+        "additionalInfo": "Crucial for crafting glyphs, runestones, and enchanting gear with magical enhancements.",
+        "components": null
+    },
+    {
+        "name": "Leather scraps",
+        "description": "Small pieces of leftover leather, reused for minor crafting needs.",
+        "imageName": "leather_scraps",
+        "category": ".crafting",
+        "additionalInfo": "Used to produce straps, bindings, or to patch up armor and clothes.",
+        "components": null
+    },
+    {
+        "name": "Leather straps",
+        "description": "Sturdy leather strips for binding and reinforcing equipment.",
+        "imageName": "leather_straps",
+        "category": ".crafting",
+        "additionalInfo": "Essential for crafting handles, belts, and fittings in armor and weapons.",
+        "components": null
+    },
+    {
+        "name": "Meteorite silver ingot",
+        "description": "A rare silver ingot enriched with meteorite minerals, enhancing monster-slaying properties.",
+        "imageName": "meteorite_silver_ingot",
+        "category": ".crafting",
+        "additionalInfo": "Used to forge superior silver swords, granting enhanced effectiveness against monsters.",
+        "components": null
+    },
+    {
+        "name": "Monster egg",
+        "description": "An egg harvested from monstrous nests, valuable in alchemy.",
+        "imageName": "monster_egg",
+        "category": ".crafting",
+        "additionalInfo": "Sourced from harpy or arachas nests. Crucial for crafting certain alchemical concoctions.",
+        "components": null
+    },
+    {
+        "name": "Orichalcum ore",
+        "description": "A rare and exotic ore known for its unique hue and magical potential.",
+        "imageName": "orichalcum_ore",
+        "category": ".crafting",
+        "additionalInfo": "Used in forging relic-grade items and high-end gear of exceptional quality.",
+        "components": null
+    },
+    {
+        "name": "Silver ingot",
+        "description": "A refined ingot of silver, key to forging effective monster-slaying weapons.",
+        "imageName": "silver_ingot",
+        "category": ".crafting",
+        "additionalInfo": "Widely used in crafting silver swords and other anti-monster gear.",
+        "components": null
+    },
+    {
+        "name": "Silver plate",
+        "description": "A flattened piece of pure silver used to reinforce weapons and armor.",
+        "imageName": "silver_plate",
+        "category": ".crafting",
+        "additionalInfo": "Employed in advanced crafting recipes, especially those requiring extra monster-killing potency.",
+        "components": null
+    },
+    {
+        "name": "Steel ingot",
+        "description": "A standard steel ingot, the backbone of many weapons and armor.",
+        "imageName": "steel_ingot",
+        "category": ".crafting",
+        "additionalInfo": "A common yet vital component, forming the basis of numerous upgrades and gear.",
+        "components": null
+    },
+    {
+        "name": "String",
+        "description": "A thin cord used to bind components and reinforce light gear.",
+        "imageName": "string",
+        "category": ".crafting",
+        "additionalInfo": "Commonly used in crafting bowstrings, sewing lighter armor, and creating accessories.",
+        "components": null
+    },
+    {
+        "name": "Thread",
+        "description": "Fine thread used for stitching fabrics, clothes, and lightweight armors.",
+        "imageName": "thread",
+        "category": ".crafting",
+        "additionalInfo": "Essential for tailors and armorsmiths when assembling complex garments and quilted armor.",
+        "components": null
+    },
+    {
+        "name": "Dwarven spirit",
+        "description": "A strong dwarven liquor used as an alchemical base.",
+        "imageName": "dwarven_spirit",
+        "category": ".crafting",
+        "additionalInfo": "Crucial in potion brewing, providing a stable base for many witcher decoctions.",
+        "components": null
+    },
+    {
+        "name": "Celandine",
+        "description": "A yellow-flowered herb used in various healing and alchemical recipes.",
+        "imageName": "celandine",
+        "category": ".crafting",
+        "additionalInfo": "Harvested from fields and forests. A key ingredient in potions enhancing vitality.",
+        "components": null
+    },
+    {
+        "name": "Drowner brain",
+        "description": "The brain of a drowned undead creature, valuable in alchemy.",
+        "imageName": "drowner_brain",
+        "category": ".crafting",
+        "additionalInfo": "Collected from drowned monsters in marshes and rivers. Used in potions and oils.",
+        "components": null
+    },
+    {
+        "name": "Ribleaf",
+        "description": "A common herb known for its fibrous leaves and mild medicinal properties.",
+        "imageName": "ribleaf",
+        "category": ".crafting",
+        "additionalInfo": "Easily gathered in fields. Serves as a base ingredient in simpler alchemical mixtures.",
+        "components": null
+    },
+    {
+        "name": "Ghoul's blood",
+        "description": "Thick, dark blood harvested from ghouls.",
+        "imageName": "ghouls_blood",
+        "category": ".crafting",
+        "additionalInfo": "Sought for more potent alchemical concoctions. Gathered from ghouls roaming graveyards and battlefields.",
+        "components": null
+    },
+    {
+        "name": "Moon dustbombs",
+        "description": "Bombs containing powdered moonstone, effective against shapeshifting monsters.",
+        "imageName": "moon_dustbombs",
+        "category": ".crafting",
+        "additionalInfo": "Used to prevent transformations and weaken creatures like vampires and werewolves.",
+        "components": null
+    },
+    {
+        "name": "Vampire oils",
+        "description": "Specialized blade oils increasing damage against vampires.",
+        "imageName": "vampire_oils",
+        "category": ".crafting",
+        "additionalInfo": "Applied to swords to exploit vampire vulnerabilities, greatly enhancing combat effectiveness.",
+        "components": null
+    },
+    {
+        "name": "Black bloodpotions",
+        "description": "Potions causing blood-drinking monsters to be harmed when feeding on the imbiber.",
+        "imageName": "black_bloodpotions",
+        "category": ".crafting",
+        "additionalInfo": "A key tool against necrophages and vampires, turning their feeding habits against them.",
+        "components": null
+    },
+    {
+        "name": "Yrden",
+        "description": "A component associated with the Yrden sign, likely used for sign-related enhancements.",
+        "imageName": "yrden",
+        "category": ".crafting",
+        "additionalInfo": "Employed in glyph or runestone crafting to improve Yrden sign intensity or effects.",
+        "components": null
+    },
+    {
+        "name": "Grapeshot bombs",
+        "description": "Bombs filled with shrapnel, inflicting widespread damage upon detonation.",
+        "imageName": "grapeshot_bombs",
+        "category": ".crafting",
+        "additionalInfo": "Effective against clusters of enemies. Often combined with oils to maximize damage.",
+        "components": null
+    },
+    {
+        "name": "Hybrid oil",
+        "description": "A blade oil that enhances damage against hybrid creatures.",
+        "imageName": "hybrid_oil",
+        "category": ".crafting",
+        "additionalInfo": "Applied to weapons to counter harpies, sirens, and other hybrid monsters.",
+        "components": null
+    },
+    {
+        "name": "Thunderbolt potions",
+        "description": "Potions increasing a witcher's attack power, aiding in tougher fights.",
+        "imageName": "thunderbolt_potions",
+        "category": ".crafting",
+        "additionalInfo": "A fundamental combat enhancer. Enhanced and superior versions offer even greater boosts.",
+        "components": null
+    },
+    {
+        "name": "Aard",
+        "description": "A sign-related component linked to the Aard sign, used in magical enhancements.",
+        "imageName": "aard",
+        "category": ".crafting",
+        "additionalInfo": "Incorporated in crafting glyphs that strengthen the telekinetic force of the Aard sign.",
+        "components": null
+    },
+    {
+        "name": "Kaer Morhen",
+        "description": "A component referencing the witchers’ fortress, symbolizing foundational witcher craft.",
+        "imageName": "kaer_morhen_symbol",
+        "category": ".crafting",
+        "additionalInfo": "",
+        "components": null
+    },
+    {
+        "name": "Skellige",
+        "description": "A component symbolizing the Skellige Isles, known for rugged landscapes and distinct flora.",
+        "imageName": "skellige_symbol",
+        "category": ".crafting",
+        "additionalInfo": "",
+        "components": null
+    },
+    {
+        "name": "Novigrad",
+        "description": "A component referencing the free city of Novigrad, hub of commerce and craft.",
+        "imageName": "novigrad_symbol",
+        "category": ".crafting",
+        "additionalInfo": "",
+        "components": null
+    }
+]

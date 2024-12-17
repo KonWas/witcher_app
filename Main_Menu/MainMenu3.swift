@@ -9,6 +9,8 @@ import SwiftUI
 
 struct MainMenu3: View {
     @State private var showMapContinent = false
+    @State private var showDynamicScreen = false
+    @State private var selectedCategory: ItemCategory = .monsters
 
     var body: some View {
         ZStack {
@@ -37,24 +39,30 @@ struct MainMenu3: View {
             }
             .offset(x: 128.50, y: -354)
 
-            HStack(spacing: 8) {
+            Button(action: {
+                showDynamicScreen = true
+            }) {
                 Image("monster_icon")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 39, height: 39)
+                    .padding(12)
+                    .frame(width: 60, height: 60)
+                    .background(Color.black.opacity(0.30))
+                    .cornerRadius(50)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 50)
+                            .stroke(Color(red: 1, green: 0.94, blue: 0.74), lineWidth: 0.50)
+                    )
             }
-            .padding(12)
-            .frame(width: 60, height: 60)
-            .background(Color.black.opacity(0.30))
-            .cornerRadius(50)
-            .overlay(
-                RoundedRectangle(cornerRadius: 50)
-                    .stroke(Color(red: 1, green: 0.94, blue: 0.74), lineWidth: 0.50)
-            )
-            .offset(x: 0, y: 129)
+            .offset(x: 0, y: 0)
         }
         .fullScreenCover(isPresented: $showMapContinent) {
             MapContinent()
+        }
+        .fullScreenCover(isPresented: $showDynamicScreen) {
+            let (background, items, title) = getItemsAndBackground(for: selectedCategory)
+                        DynamicItemListScreen(category: selectedCategory, backgroundImageName: background, items: items, title: title)
         }
     }
 }

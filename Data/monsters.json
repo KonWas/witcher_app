@@ -1,0 +1,28 @@
+[
+    {
+        "name": "Bruxa",
+        "description": "A Vampire creature found in Toussaint.",
+        "imageName": "monsters_bruxa",
+        "category": ".monsters",
+        "additionalInfo": "A powerful higher vampire taking human form.\nClass: Vampire,\nVariations: -,\nOccurrence: Toussaint,\nLoot: Vampire blood, Vampire fang, Vampire saliva, Blue mutagen, Monster brain, Monster bone, Monster claw, Monster ear, Monster eye, Monster hair, Monster heart, Monster liver, Monster stomach, Monster tongue",
+        "components": [
+            "Moon dustbombs",
+            "Vampire oils",
+            "Black bloodpotions",
+            "Yrden"
+        ]
+    },
+    {
+        "name": "Griffin",
+        "description": "A Hybrid monster commonly found in primeval highlands and unreachable mountain summits.",
+        "imageName": "monsters_griffin",
+        "category": ".monsters",
+        "additionalInfo": "A winged hybrid combining the features of an eagle and a lion, known for its deadly swooping attacks.\nClass: Hybrids,\nVariations: Royal griffin, Archgriffin,\nOccurrence: primeval highlands, unreachable mountain summits,\nLoot: Griffin mutagen, Griffin's egg, Griffin feathers, Infused dust, Raw meat, Monster brain, Monster claw, Monster eye, Monster heart, Monster tongue",
+        "components": [
+            "Grapeshot bombs",
+            "Hybrid oil",
+            "Thunderbolt potions",
+            "Aard"
+        ]
+    }
+]
