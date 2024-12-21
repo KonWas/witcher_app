@@ -112,9 +112,11 @@ struct Location: Identifiable {
 
 struct ZoomableScrollView<Content: View>: UIViewRepresentable {
     let content: Content
+    var onTap: ((CGPoint) -> Void)? = nil
 
-    init(@ViewBuilder content: () -> Content) {
+    init(@ViewBuilder content: () -> Content, onTap: ((CGPoint) -> Void)? = nil) {
         self.content = content()
+        self.onTap = onTap
     }
 
     func makeUIView(context: Context) -> UIScrollView {
@@ -132,10 +134,18 @@ struct ZoomableScrollView<Content: View>: UIViewRepresentable {
         scrollView.addSubview(hostingController.view)
         scrollView.contentSize = hostingController.view.frame.size
 
+        // Dodanie gestu tap
+        let tapGesture = UITapGestureRecognizer(target: context.coordinator, action: #selector(Coordinator.handleTap(_:)))
+        scrollView.addGestureRecognizer(tapGesture)
+
+        context.coordinator.hostingController = hostingController
+
         return scrollView
     }
 
-    func updateUIView(_ uiView: UIScrollView, context: Context) {}
+    func updateUIView(_ uiView: UIScrollView, context: Context) {
+        context.coordinator.hostingController.rootView = content
+    }
 
     func makeCoordinator() -> Coordinator {
         Coordinator(self)
@@ -143,6 +153,7 @@ struct ZoomableScrollView<Content: View>: UIViewRepresentable {
 
     class Coordinator: NSObject, UIScrollViewDelegate {
         let parent: ZoomableScrollView
+        var hostingController: UIHostingController<Content>!
 
         init(_ parent: ZoomableScrollView) {
             self.parent = parent
@@ -151,8 +162,14 @@ struct ZoomableScrollView<Content: View>: UIViewRepresentable {
         func viewForZooming(in scrollView: UIScrollView) -> UIView? {
             scrollView.subviews.first
         }
+
+        @objc func handleTap(_ gesture: UITapGestureRecognizer) {
+            let location = gesture.location(in: gesture.view)
+            parent.onTap?(location)
+        }
     }
 }
+
 
 struct MapContinent_Previews: PreviewProvider {
     static var previews: some View {
