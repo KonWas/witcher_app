@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct MainMenu2: View {
+    @EnvironmentObject var buildModel: BuildModel
+    
     @State private var showMapContinent = false
     @State private var showDynamicScreen = false
     @State private var selectedCategory: ItemCategory = .armor
@@ -63,6 +65,7 @@ struct MainMenu2: View {
         .fullScreenCover(isPresented: $showDynamicScreen) {
             let (background, items, title) = getItemsAndBackground(for: selectedCategory)
                         DynamicItemListScreen(category: selectedCategory, backgroundImageName: background, items: items, title: title)
+                .environmentObject(buildModel)
         }
     }
 }
@@ -70,6 +73,7 @@ struct MainMenu2: View {
 struct MainMenu2_Previews: PreviewProvider {
     static var previews: some View {
         MainMenu2()
+            .environmentObject(BuildModel())
     }
 }
 

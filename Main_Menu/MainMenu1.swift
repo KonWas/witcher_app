@@ -60,7 +60,7 @@ struct MainMenu1: View {
         }
         .fullScreenCover(isPresented: $showDynamicScreen) {
             let (background, items, title) = getItemsAndBackground(for: selectedCategory)
-                        DynamicItemListScreen(category: selectedCategory, backgroundImageName: background, items: items, title: title)
+            DynamicItemListScreen(category: selectedCategory, backgroundImageName: background, items: items, title: title)
         }
     }
 }

@@ -121,7 +121,6 @@ struct RegionMap: View {
                                         )
                                     
                                     HStack {
-                                        // Przycisk Anulowania
                                         Button(action: {
                                             showingAddMarker = false
                                             tempMarkerName = ""
@@ -141,7 +140,6 @@ struct RegionMap: View {
                                         
                                         Spacer()
                                         
-                                        // Przycisk Dodawania
                                         Button(action: {
                                             let newMarker = Marker(
                                                 id: UUID(),

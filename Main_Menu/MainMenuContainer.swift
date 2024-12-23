@@ -9,6 +9,8 @@
 import SwiftUI
 
 struct MainMenuContainer: View {
+    @EnvironmentObject var buildModel: BuildModel
+    
     @State private var currentView: Int = 1
     @State private var slideDirection: Edge = .trailing
 
@@ -58,6 +60,7 @@ struct MainMenuContainer: View {
                                 }
                             }
                     )
+                    .environmentObject(buildModel)
             case 3:
                 MainMenu3()
                     .transition(

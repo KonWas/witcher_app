@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct witcher_3_glossaryApp: App {
+    @StateObject var buildModel = BuildModel()
+
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(buildModel)
                 .preferredColorScheme(.dark)
         }
     }
