@@ -4,7 +4,7 @@
         "description": "Witcher gear Silver sword (Level 14)",
         "imageName": "wolven_silver_sword",
         "category": ".sword",
-        "additionalInfo": "Tier: Witcher gear, Type: Silver sword, Level Req.: 14, Source: Craft, Weight: 1.71, Base: 367, Effect(s): +5%Signintensity+5% Adrenaline Point gain+5% Chance to cause bleeding+20% Bonus experience frommonsters, Slots: 1, Damage: 229-279, Diagram: Wolven silver sword, Craftsman: Amateurblacksmith, Item ID: Wolf School silver sword",
+        "additionalInfo": "Tier: Witcher gear,\nType: Silver sword,\nLevel Req.: 14,\nSource: Craft,\nWeight: 1.71,\nBase: 367,\nEffect(s):\n\t+5% Sign intensity\n\t+5% Adrenaline Point gain\n\t+5% Chance to cause bleeding\n\t+20% Bonus experience from monsters,\nSlots: 1,\nDamage: 229-279,\nDiagram: Wolven silver sword,\nCraftsman: Amateur blacksmith,\nItem ID: Wolf School silver sword",
         "components": [
             "Leather scraps",
             "Silver ingot",
@@ -16,7 +16,7 @@
         "description": "Witcher gear Steel sword (Level 14)",
         "imageName": "wolven_steel_sword",
         "category": ".sword",
-        "additionalInfo": "Tier: Witcher gear, Type: Steel sword, Level Req.: 14, Source: Craft, Weight: 1.71, Base: 216, Effect(s): +5%Signintensity+5% Adrenaline Point gain+5% Chance to cause bleeding+5% Bonus experience fromhumansandnonhumans, Slots: 1, Damage: 140-172, Diagram: Wolven steel sword, Craftsman: Amateurblacksmith, Item ID: Wolf School steel sword",
+        "additionalInfo": "Tier: Witcher gear,\nType: Steel sword,\nLevel Req.: 14,\nSource: Craft,\nWeight: 1.71,\nBase: 216,\nEffect(s):\n\t+5% Sign intensity\n\t+5% Adrenaline Point gain\n\t+5% Chance to cause bleeding\n\t+5% Bonus experience from humans and nonhumans,\nSlots: 1,\nDamage: 140-172,\nDiagram: Wolven steel sword,\nCraftsman: Amateur blacksmith,\nItem ID: Wolf School steel sword",
         "components": [
             "Leather scraps",
             "Steel ingot",
@@ -28,7 +28,7 @@
         "description": "Witcher gear Silver sword (Level 21)",
         "imageName": "wolven_silver_sword___enhanced",
         "category": ".sword",
-        "additionalInfo": "Tier: Witcher gear, Type: Silver sword, Level Req.: 21, Source: Craft, Weight: 1.61, Base: 481, Effect(s): +6%Signintensity+6% Adrenaline Point gain+6% Chance to cause bleeding+20% Bonus experience frommonsters, Slots: 2, Damage: 292-356, Diagram: Wolven silver sword - enhanced, Craftsman: Journeymanblacksmith, Item ID: Wolf School silver sword 1",
+        "additionalInfo": "Tier: Witcher gear,\nType: Silver sword,\nLevel Req.: 21,\nSource: Craft,\nWeight: 1.61,\nBase: 481,\nEffect(s):\n\t+6% Sign intensity\n\t+6% Adrenaline Point gain\n\t+6% Chance to cause bleeding\n\t+20% Bonus experience from monsters,\nSlots: 2,\nDamage: 292-356,\nDiagram: Wolven silver sword - enhanced,\nCraftsman: Journeyman blacksmith,\nItem ID: Wolf School silver sword 1",
         "components": [
             "Leather straps",
             "Meteorite silver ingot"
@@ -39,7 +39,7 @@
         "description": "Witcher gear Steel sword (Level 21)",
         "imageName": "wolven_steel_sword___enhanced",
         "category": ".sword",
-        "additionalInfo": "Tier: Witcher gear, Type: Steel sword, Level Req.: 21, Source: Craft, Weight: 2.26, Base: 311, Effect(s): +6%Signintensity+6% Adrenaline Point gain+6% Chance to cause bleeding+5% Bonus experience fromhumansandnonhumans, Slots: 2, Damage: 191-233, Diagram: Wolven steel sword - enhanced, Craftsman: Journeymanblacksmith, Item ID: Wolf School steel sword 1",
+        "additionalInfo": "Tier: Witcher gear,\nType: Steel sword,\nLevel Req.: 21,\nSource: Craft,\nWeight: 2.26,\nBase: 311,\nEffect(s):\n\t+6% Sign intensity\n\t+6% Adrenaline Point gain\n\t+6% Chance to cause bleeding\n\t+5% Bonus experience from humans and nonhumans,\nSlots: 2,\nDamage: 191-233,\nDiagram: Wolven steel sword - enhanced,\nCraftsman: Journeyman blacksmith,\nItem ID: Wolf School steel sword 1",
         "components": [
             "Leather scraps",
             "Dark steel ingot"

@@ -4,7 +4,7 @@
         "description": "Witcher gear Medium armor (Level 14)",
         "imageName": "wolven_armor",
         "category": ".armor",
-        "additionalInfo": "Tier: Witcher gear,\nType: Medium armor,\nLevel Req.: 14,\nSource: Craft,\nWeight: 3.35,\nBase: 378,\nEffect(s):\n\t+5% Adrenaline Point gain\n\t+5% Resistance to piercing damage\n\t+5% Resistance to bludgeoning damage\n\t+10% Resistance to slashing damage\n\t+12% Resistance to damage from monsters(15% beforePatch 4.0),\nSlots: 1,\nArmor: 105,\nDiagram: Wolven armor,\nCraftsman: Amateurarmorer,\nItem ID: Wolf Armor",
+        "additionalInfo": "Tier: Witcher gear,\nType: Medium armor,\nLevel Req.: 14,\nSource: Craft,\nWeight: 3.35,\nBase: 378,\nEffect(s):\n\t+5% Adrenaline Point gain\n\t+5% Resistance to piercing damage\n\t+5% Resistance to bludgeoning damage\n\t+10% Resistance to slashing damage\n\t+12% Resistance to damage from monsters(15% before Patch 4.0),\nSlots: 1,\nArmor: 105,\nDiagram: Wolven armor,\nCraftsman: Amateur armorer,\nItem ID: Wolf Armor",
         "components": [
             "Hardened leather",
             "Dark steel plate",
@@ -16,7 +16,7 @@
         "description": "Witcher gear Medium armor (Level 14)",
         "imageName": "wolven_boots",
         "category": ".armor",
-        "additionalInfo": "Tier: Witcher gear, Type: Medium armor, Level Req.: 14, Source: Craft, Weight: 1.22, Base: 214, Effect(s): +5% Attack power+1% Resistance to piercing damage+1% Resistance to bludgeoning damage+2% Resistance to slashing damage+2% Resistance to damage frommonsters, Slots: 0, Armor: 37, Diagram: Wolven boots, Craftsman: Amateurarmorer, Item ID: Wolf Boots 1",
+        "additionalInfo": "Tier: Witcher gear,\nType: Medium armor,\nLevel Req.: 14,\nSource: Craft,\nWeight: 1.22,\nBase: 214,\nEffect(s):\n\t+5% Attack power\n\t+1% Resistance to piercing damage\n\t+1% Resistance to bludgeoning damage\n\t+2% Resistance to slashing damage\n\t+2% Resistance to damage from monsters,\nSlots: 0,\nArmor: 37,\nDiagram: Wolven boots,\nCraftsman: Amateur armorer,\nItem ID: Wolf Boots 1",
         "components": [
             "Cured leather",
             "Dark steel plate",
@@ -29,7 +29,7 @@
         "description": "Witcher gear Medium armor (Level 14)",
         "imageName": "wolven_gauntlets",
         "category": ".armor",
-        "additionalInfo": "Tier: Witcher gear, Type: Medium armor, Level Req.: 14, Source: Craft, Weight: 0.82, Base: 192, Effect(s): +5%Signintensity+1% Resistance to piercing damage+2% Resistance to slashing damage+2% Resistance to damage frommonsters+5% Resistance toelementaldamage, Slots: 0, Armor: 33, Diagram: Wolven gauntlets, Craftsman: Amateurarmorer, Item ID: Wolf Gloves 1",
+        "additionalInfo": "Tier: Witcher gear,\nType: Medium armor,\nLevel Req.: 14,\nSource: Craft,\nWeight: 0.82,\nBase: 192,\nEffect(s):\n\t+5% Sign intensity\n\t+1% Resistance to piercing damage\n\t+2% Resistance to slashing damage\n\t+2% Resistance to damage from monsters\n\t+5% Resistance to elemental damage,\nSlots: 0,\nArmor: 33,\nDiagram: Wolven gauntlets,\nCraftsman: Amateur armorer,\nItem ID: Wolf Gloves 1",
         "components": [
             "Cured leather",
             "Dark steel plate",
@@ -41,7 +41,7 @@
         "description": "Witcher gear Medium armor (Level 14)",
         "imageName": "wolven_trousers",
         "category": ".armor",
-        "additionalInfo": "Tier: Witcher gear, Type: Medium armor, Level Req.: 14, Source: Craft, Weight: 1.30, Base: 238, Effect(s): +5% Attack power+5%Signintensity+5% Resistance to slashing damage+5% Resistance to damage frommonsters(7% beforePatch 4.0)+17% Resistance toelementaldamage, Slots: 0, Armor: 37, Diagram: Wolven trousers, Craftsman: Amateurarmorer, Item ID: Wolf Pants 1",
+        "additionalInfo": "Tier: Witcher gear,\nType: Medium armor,\nLevel Req.: 14,\nSource: Craft,\nWeight: 1.30,\nBase: 238,\nEffect(s):\n\t+5% Attack power\n\t+5% Sign intensity\n\t+5% Resistance to slashing damage\n\t+5% Resistance to damage from monsters(7% before Patch 4.0)\n\t+17% Resistance to elemental damage,\nSlots: 0,\nArmor: 37,\nDiagram: Wolven trousers,\nCraftsman: Amateur armorer,\nItem ID: Wolf Pants 1",
         "components": [
             "Cured leather",
             "Dark steel plate",
@@ -53,7 +53,7 @@
         "description": "Witcher gear Medium armor (Level 21)",
         "imageName": "enhanced_wolven_armor",
         "category": ".armor",
-        "additionalInfo": "Tier: Witcher gear, Type: Medium armor, Level Req.: 21, Source: Craft, Weight: 3.70, Base: 402, Effect(s): +10% Adrenaline Point gain+8% Resistance to piercing damage+8% Resistance to bludgeoning damage+14% Resistance to slashing damage+16% Resistance to damage frommonsters(20% beforePatch 4.0), Slots: 2, Armor: 140, Diagram: Enhanced Wolven armor, Craftsman: Journeymanarmorer, Item ID: Wolf Armor 1",
+        "additionalInfo": "Tier: Witcher gear,\nType: Medium armor,\nLevel Req.: 21,\nSource: Craft,\nWeight: 3.70,\nBase: 402,\nEffect(s):\n\t+10% Adrenaline Point gain\n\t+8% Resistance to piercing damage\n\t+8% Resistance to bludgeoning damage\n\t+14% Resistance to slashing damage\n\t+16% Resistance to damage from monsters(20% before Patch 4.0),\nSlots: 2,\nArmor: 140,\nDiagram: Enhanced Wolven armor,\nCraftsman: Journeyman armorer,\nItem ID: Wolf Armor 1",
         "components": [
             "Hardened leather",
             "Dark steel plate",
@@ -65,7 +65,7 @@
         "description": "Witcher gear Medium armor (Level 21)",
         "imageName": "enhanced_wolven_boots",
         "category": ".armor",
-        "additionalInfo": "Tier: Witcher gear, Type: Medium armor, Level Req.: 21, Source: Craft, Weight: 1.22, Base: 220, Effect(s): +6% Attack power+2% Resistance to piercing damage+2% Resistance to bludgeoning damage+3% Resistance to slashing damage+2% Resistance to damage frommonsters(3% beforePatch 4.0), Slots: 0, Armor: 51, Diagram: Enhanced Wolven boots, Craftsman: Journeymanarmorer, Item ID: Wolf Boots 2",
+        "additionalInfo": "Tier: Witcher gear,\nType: Medium armor,\nLevel Req.: 21,\nSource: Craft,\nWeight: 1.22,\nBase: 220,\nEffect(s):\n\t+6% Attack power\n\t+2% Resistance to piercing damage\n\t+2% Resistance to bludgeoning damage\n\t+3% Resistance to slashing damage\n\t+2% Resistance to damage from monsters(3% before Patch 4.0),\nSlots: 0,\nArmor: 51,\nDiagram: Enhanced Wolven boots,\nCraftsman: Journeyman armorer,\nItem ID: Wolf Boots 2",
         "components": [
             "Cured leather",
             "Dark steel plate",
@@ -78,7 +78,7 @@
         "description": "Witcher gear Medium armor (Level 21)",
         "imageName": "enhanced_wolven_gauntlets",
         "category": ".armor",
-        "additionalInfo": "Tier: Witcher gear, Type: Medium armor, Level Req.: 21, Source: Craft, Weight: 0.82, Base: 195, Effect(s): +6%Signintensity+2% Resistance to piercing damage+3% Resistance to slashing damage+2% Resistance to damage frommonsters(3% beforePatch 4.0)+6% Resistance toelementaldamage, Slots: 0, Armor: 51, Diagram: Enhanced Wolven gauntlets, Craftsman: Journeymanarmorer, Item ID: Wolf Gloves 2",
+        "additionalInfo": "Tier: Witcher gear,\nType: Medium armor,\nLevel Req.: 21,\nSource: Craft,\nWeight: 0.82,\nBase: 195,\nEffect(s):\n\t+6% Sign intensity\n\t+2% Resistance to piercing damage\n\t+3% Resistance to slashing damage\n\t+2% Resistance to damage from monsters(3% before Patch 4.0)\n\t+6% Resistance to elemental damage,\nSlots: 0,\nArmor: 51,\nDiagram: Enhanced Wolven gauntlets,\nCraftsman: Journeyman armorer,\nItem ID: Wolf Gloves 2",
         "components": [
             "Cured leather",
             "Dark steel plate",
@@ -90,7 +90,7 @@
         "description": "Witcher gear Medium armor (Level 21)",
         "imageName": "enhanced_wolven_trousers",
         "category": ".armor",
-        "additionalInfo": "Tier: Witcher gear, Type: Medium armor, Level Req.: 21, Source: Craft, Weight: 1.30, Base: 238, Effect(s): +6% Attack power+6%Signintensity+6% Resistance to slashing damage+5% Resistance to damage frommonsters(7% beforePatch 4.0)+19% Resistance toelementaldamage, Slots: 1, Armor: 51, Diagram: Enhanced Wolven trousers, Craftsman: Journeymanarmorer, Item ID: Wolf Pants 2",
+        "additionalInfo": "Tier: Witcher gear,\nType: Medium armor,\nLevel Req.: 21,\nSource: Craft,\nWeight: 1.30,\nBase: 238,\nEffect(s):\n\t+6% Attack power\n\t+6% Sign intensity\n\t+6% Resistance to slashing damage\n\t+5% Resistance to damage from monsters(7% before Patch 4.0)\n\t+19% Resistance to elemental damage,\nSlots: 1,\nArmor: 51,\nDiagram: Enhanced Wolven trousers,\nCraftsman: Journeyman armorer,\nItem ID: Wolf Pants 2",
         "components": [
             "Cured leather",
             "Dark steel plate",
