@@ -7,12 +7,13 @@
 
 
 import Foundation
+import UIKit
 
 class Item: Identifiable, Decodable {
     let id = UUID()
     let name: String
     let description: String
-    let imageName: String
+    var imageName: String
     let category: ItemCategory
     let additionalInfo: String
     let componentNames: [String]?
@@ -45,7 +46,11 @@ class Item: Identifiable, Decodable {
         self.category = try container.decode(ItemCategory.self, forKey: .category)
         self.additionalInfo = try container.decode(String.self, forKey: .additionalInfo)
         self.componentNames = try container.decodeIfPresent([String].self, forKey: .componentNames)
-        self.components = nil // Will be resolved later
+        self.components = nil
+        
+        if UIImage(named: self.imageName) == nil {
+            self.imageName = "question_mark"
+        }
     }
 }
 

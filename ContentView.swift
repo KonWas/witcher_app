@@ -15,9 +15,11 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             Image("main_screen_bg")
+                .renderingMode(.original)
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .ignoresSafeArea()
+                
 
             Image("witcher_logo")
                 .resizable()

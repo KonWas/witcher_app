@@ -27,7 +27,7 @@ struct MainMenu1: View {
                         .font(Font.custom("SF", size: 16))
                         .foregroundColor(Color(red: 1, green: 0.94, blue: 0.74).opacity(0.70))
                         .frame(width: 70, height: 40)
-                        .background(Color.black.opacity(0.30))
+                        .background(Color.black.opacity(0.50))
                         .cornerRadius(50)
                         .overlay(
                             RoundedRectangle(cornerRadius: 50)
@@ -46,7 +46,7 @@ struct MainMenu1: View {
                     .frame(width: 39, height: 39)
                     .padding(12)
                     .frame(width: 60, height: 60)
-                    .background(Color.black.opacity(0.30))
+                    .background(Color.black.opacity(0.50))
                     .cornerRadius(50)
                     .overlay(
                         RoundedRectangle(cornerRadius: 50)

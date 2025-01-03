@@ -113,7 +113,7 @@ struct BuildScreen: View {
                                 .stroke(Color(red: 1, green: 0.94, blue: 0.74).opacity(0.70), lineWidth: 0.50)
                         )
                 }
-                .padding(.bottom, 20)
+                .padding(.bottom, 40)
             }
         }
     }
