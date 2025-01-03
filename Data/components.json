@@ -296,7 +296,7 @@
         "components": null
     },
     {
-        "name": "Kaer Morhen",
+        "name": "Kaer_Mohren",
         "description": "A component referencing the witchers’ fortress, symbolizing foundational witcher craft.",
         "imageName": "kaer_morhen_symbol",
         "category": ".crafting",

@@ -5,7 +5,7 @@
         "imageName": "geralt",
         "category": ".people",
         "additionalInfo": "Class: Witcher,\nStats: Master swordsman, skilled alchemist, proficient in Signs,\nOccurrence: Encountered throughout the Northern Realms (Velen, Novigrad, Skellige, Toussaint),\nAssociations: Connected to the School of the Wolf, allies include Yennefer, Triss, Ciri, Zoltan, Dandelion,\nNotable Quests: 'The Battle of Kaer Morhen', 'Something Ends, Something Begins'",
-        "components": ["Kaer Morhen"]
+        "components": ["Kaer_Mohren"]
     },
     {
         "name": "Yennefer of Vengerberg",
