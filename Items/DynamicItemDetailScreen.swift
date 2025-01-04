@@ -11,7 +11,7 @@
 //struct DynamicItemDetailScreen: View {
 //    @Environment(\.presentationMode) var presentationMode
 //    @EnvironmentObject var buildModel: BuildModel
-//    
+//
 //    let item: Item
 //    let backgroundImageName: String
 //

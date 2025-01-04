@@ -19,61 +19,73 @@ struct MainMenu2: View {
             Image("background2")
                 .resizable()
                 .aspectRatio(contentMode: .fill)
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .ignoresSafeArea()
+            
+            VStack {
+                // Górny pasek
+                HStack {
+                    Spacer()
+                    Button(action: {
+                        showMapContinent = true
+                    }) {
+                        Text("Map")
+                            .font(Font.custom("SF", size: 16))
+                            .foregroundColor(Color(red: 1, green: 0.94, blue: 0.74).opacity(0.70))
+                            .frame(width: 70, height: 40)
+                            .background(Color.black.opacity(0.50))
+                            .cornerRadius(50)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 50)
+                                    .stroke(Color(red: 1, green: 0.94, blue: 0.74).opacity(0.70), lineWidth: 0.50)
+                            )
+                    }
+                }
+                .padding(.top, 60)
+                .padding(.horizontal, 20)
 
-            HStack(spacing: 8) {
+                Spacer()
+
+                // Główny przycisk (ikona) na środku
                 Button(action: {
-                    showMapContinent = true
+                    showDynamicScreen = true
                 }) {
-                    Text("Map")
-                        .font(Font.custom("SF", size: 16))
-                        .lineSpacing(16)
-                        .foregroundColor(Color(red: 1, green: 0.94, blue: 0.74).opacity(0.70))
-                        .frame(width: 70, height: 40)
+                    Image("armour_icon")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 40, height: 40)
+                        .padding(12)
                         .background(Color.black.opacity(0.50))
                         .cornerRadius(50)
                         .overlay(
                             RoundedRectangle(cornerRadius: 50)
-                                .stroke(Color(red: 1, green: 0.94, blue: 0.74).opacity(0.70), lineWidth: 0.50)
+                                .stroke(Color(red: 1, green: 0.94, blue: 0.74), lineWidth: 0.50)
                         )
                 }
-            }
-            .offset(x: 128.50, y: -354)
 
-            Button(action: {
-                showDynamicScreen = true
-            }) {
-                Image("armour_icon")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 39, height: 39)
-                    .padding(12)
-                    .frame(width: 60, height: 60)
-                    .background(Color.black.opacity(0.50))
-                    .cornerRadius(50)
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 50)
-                            .stroke(Color(red: 1, green: 0.94, blue: 0.74), lineWidth: 0.50)
-                    )
+                Spacer()
             }
-            .offset(x: 0, y: 0)
         }
         .fullScreenCover(isPresented: $showMapContinent) {
             MapContinent()
         }
         .fullScreenCover(isPresented: $showDynamicScreen) {
             let (background, items, title) = getItemsAndBackground(for: selectedCategory)
-                        DynamicItemListScreen(category: selectedCategory, backgroundImageName: background, items: items, title: title)
-                .environmentObject(buildModel)
+            DynamicItemListScreen(
+                category: selectedCategory,
+                backgroundImageName: background,
+                items: items,
+                title: title
+            )
+            .environmentObject(buildModel)
         }
     }
 }
 
 struct MainMenu2_Previews: PreviewProvider {
     static var previews: some View {
+        let allItems = armorItems + swordItems
         MainMenu2()
-            .environmentObject(BuildModel())
+            .environmentObject(BuildModel(allItems: allItems))
     }
 }
 

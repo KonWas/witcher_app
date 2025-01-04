@@ -100,18 +100,36 @@ struct BuildScreen: View {
                     .padding(.horizontal, 20)
                 }
 
-                Button(action: {
-                    buildModel.clearBuild()
-                }) {
-                    Text("Clear Build")
-                        .foregroundColor(Color(red: 1, green: 0.94, blue: 0.74).opacity(0.70))
-                        .frame(width: 120, height: 40)
-                        .background(Color.black.opacity(0.30))
-                        .cornerRadius(50)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 50)
-                                .stroke(Color(red: 1, green: 0.94, blue: 0.74).opacity(0.70), lineWidth: 0.50)
-                        )
+                HStack(spacing: 20) {
+                    // Clear build
+                    Button(action: {
+                        buildModel.clearBuild()
+                    }) {
+                        Text("Clear Build")
+                            .foregroundColor(Color(red: 1, green: 0.94, blue: 0.74).opacity(0.70))
+                            .frame(width: 120, height: 40)
+                            .background(Color.black.opacity(0.30))
+                            .cornerRadius(50)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 50)
+                                    .stroke(Color(red: 1, green: 0.94, blue: 0.74).opacity(0.70), lineWidth: 0.50)
+                            )
+                    }
+
+                    // Save build
+                    Button(action: {
+                        buildModel.saveBuild()
+                    }) {
+                        Text("Save Build")
+                            .foregroundColor(Color(red: 1, green: 0.94, blue: 0.74).opacity(0.70))
+                            .frame(width: 120, height: 40)
+                            .background(Color.black.opacity(0.30))
+                            .cornerRadius(50)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 50)
+                                    .stroke(Color(red: 1, green: 0.94, blue: 0.74).opacity(0.70), lineWidth: 0.50)
+                            )
+                    }
                 }
                 .padding(.bottom, 40)
             }
