@@ -6,27 +6,6 @@
 //
 
 
-//import Foundation
-//import SwiftUI
-//
-//class BuildModel: ObservableObject {
-//    @Published var armor: Item?
-//    @Published var trousers: Item?
-//    @Published var gauntlets: Item?
-//    @Published var boots: Item?
-//    @Published var silverSword: Item?
-//    @Published var steelSword: Item?
-//
-//    func clearBuild() {
-//        armor = nil
-//        trousers = nil
-//        gauntlets = nil
-//        boots = nil
-//        silverSword = nil
-//        steelSword = nil
-//    }
-//}
-
 import Foundation
 import SwiftUI
 
@@ -38,12 +17,12 @@ class BuildModel: ObservableObject {
     @Published var silverSword: Item?
     @Published var steelSword: Item?
     
-    // Lista wszystkich przedmiotów (zbroje, miecze, etc.)
+    // list of armours and swords
     private let allItems: [Item]
 
     init(allItems: [Item]) {
         self.allItems = allItems
-        // Przy uruchomieniu od razu ładuj build z pamięci
+        // load the build from memory
         loadBuild()
     }
 
@@ -56,12 +35,10 @@ class BuildModel: ObservableObject {
         steelSword = nil
     }
 
-    // Zapisywanie do UserDefaults
-    
+    // save to user UserDefaults
     func saveBuild() {
         let defaults = UserDefaults.standard
         
-        // Możemy zapisać 'name' każdego przedmiotu, np. "Wolven armor"
         defaults.set(armor?.name,        forKey: "armorName")
         defaults.set(trousers?.name,     forKey: "trousersName")
         defaults.set(gauntlets?.name,    forKey: "gauntletsName")
@@ -82,7 +59,7 @@ class BuildModel: ObservableObject {
         let silverSwordName  = defaults.string(forKey: "silverSwordName")
         let steelSwordName   = defaults.string(forKey: "steelSwordName")
         
-        // Odszukujemy Item w allItems po name
+        // look for Item in allItems to load it to the build
         self.armor        = allItems.first(where: { $0.name == armorName })
         self.trousers     = allItems.first(where: { $0.name == trousersName })
         self.gauntlets    = allItems.first(where: { $0.name == gauntletsName })

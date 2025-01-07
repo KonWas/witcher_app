@@ -5,6 +5,7 @@
 //  Created by Konrad Waszczuk on 23/11/2024.
 //
 
+
 import SwiftUI
 
 struct MainMenu4: View {
@@ -20,7 +21,6 @@ struct MainMenu4: View {
                 .ignoresSafeArea()
 
             VStack {
-                // Górny pasek
                 HStack {
                     Spacer()
                     Button(action: {
@@ -43,7 +43,6 @@ struct MainMenu4: View {
 
                 Spacer()
 
-                // Główny przycisk (ikona) na środku
                 Button(action: {
                     showDynamicScreen = true
                 }) {

@@ -249,6 +249,7 @@
 
 import SwiftUI
 
+//
 extension String: Identifiable {
     public var id: String { self }
 }
@@ -279,7 +280,6 @@ struct DynamicItemDetailScreen: View {
                 .edgesIgnoringSafeArea(.all)
 
             VStack(spacing: 20) {
-                // Back button
                 HStack {
                     Button(action: {
                         presentationMode.wrappedValue.dismiss()
@@ -299,7 +299,6 @@ struct DynamicItemDetailScreen: View {
                 .padding(.top, 60)
                 .padding(.leading, 30)
 
-                // Item name
                 Text(item.name)
                     .font(.largeTitle)
                     .foregroundColor(.white)
@@ -307,10 +306,8 @@ struct DynamicItemDetailScreen: View {
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(.leading, 20)
 
-                // Scrollable content
                 ScrollView {
                     VStack(spacing: 20) {
-                        // Item image
                         Image(item.imageName)
                             .resizable()
                             .frame(
@@ -331,11 +328,9 @@ struct DynamicItemDetailScreen: View {
                             .multilineTextAlignment(.center)
                             .padding()
 
-                        // Category-specific content
                         categorySpecificView(item: item)
                             .padding()
 
-                        // If the item is .armor or .sword, show "Add to Build" button
                         if item.category == .armor || item.category == .sword {
                             Button(action: {
                                 addToBuild(item)
@@ -352,7 +347,6 @@ struct DynamicItemDetailScreen: View {
                             }
                         }
 
-                        // Różne tytuły sekcji:
                         var categoryText: String {
                             switch item.category {
                             case .people:   return "Location"
@@ -361,7 +355,6 @@ struct DynamicItemDetailScreen: View {
                             }
                         }
 
-                        // Komponenty danej pozycji
                         if let components = item.components, !components.isEmpty {
                             Text(categoryText)
                                 .font(.title2)
@@ -371,10 +364,8 @@ struct DynamicItemDetailScreen: View {
                             ForEach(components) { component in
                                 Button(action: {
                                     if item.category == .people {
-                                        // Zamiast otwierać detail, przejdź do RegionMap
                                         selectedRegionName = component.name
                                     } else {
-                                        // Dotychczasowe przejście do detail
                                         selectedComponent = component
                                     }
                                 }) {
@@ -400,7 +391,6 @@ struct DynamicItemDetailScreen: View {
                 .padding(.horizontal, 20)
             }
         }
-        // Przejście do detail dla zwykłych komponentów
         .fullScreenCover(item: $selectedComponent) { component in
             DynamicItemDetailScreen(
                 item: component,
@@ -408,13 +398,11 @@ struct DynamicItemDetailScreen: View {
             )
             .environmentObject(buildModel)
         }
-        // Przejście do region map, gdy category == .people
         .fullScreenCover(item: $selectedRegionName) { region in
             RegionMap(regionName: region)
         }
     }
 
-    // Here you can customize how items go into build slots
     private func addToBuild(_ item: Item) {
         let lowercasedName = item.name.lowercased()
 
@@ -431,9 +419,10 @@ struct DynamicItemDetailScreen: View {
         } else if lowercasedName.contains("steel sword") || lowercasedName.contains("steel_sword") {
             buildModel.steelSword = item
         }
-        // You can add more logic as needed.
     }
 
+    
+    // prepared if I wanted to expand each category by its specific info - didn't do it
     @ViewBuilder
     private func categorySpecificView(item: Item) -> some View {
         switch item.category {

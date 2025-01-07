@@ -20,7 +20,6 @@ struct BuildScreen: View {
                 .ignoresSafeArea()
 
             VStack(spacing: 20) {
-                // Back button
                 HStack {
                     Button(action: {
                         presentationMode.wrappedValue.dismiss()
@@ -40,7 +39,6 @@ struct BuildScreen: View {
                 .padding(.top, 60)
                 .padding(.leading, 30)
 
-                // Title
                 Text("My Build")
                     .font(.largeTitle)
                     .foregroundColor(.white)
@@ -48,14 +46,11 @@ struct BuildScreen: View {
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(.leading, 20)
 
-                // SUM of Armor
                 let totalArmor = calculateTotalArmor()
                 
-                // Damage (Steel + Silver)
                 let steelDamage = parseDamage(from: buildModel.steelSword?.additionalInfo)
                 let silverDamage = parseDamage(from: buildModel.silverSword?.additionalInfo)
 
-                // Wyświetlamy krótkie podsumowanie
                 VStack(spacing: 8) {
                     Text("Total Armor: \(totalArmor)")
                         .foregroundColor(.white)
@@ -71,7 +66,6 @@ struct BuildScreen: View {
                 .background(Color.black.opacity(0.6))
                 .cornerRadius(12)
 
-                // Sloty w scrollu
                 ScrollView {
                     VStack(alignment: .leading, spacing: 20) {
                         buildSlotView(label: "Armor", item: buildModel.armor)
@@ -81,7 +75,6 @@ struct BuildScreen: View {
                         buildSlotView(label: "Silver Sword", item: buildModel.silverSword)
                         buildSlotView(label: "Steel Sword", item: buildModel.steelSword)
 
-                        // Dodatkowo - Effekty ze wszystkich przedmiotów
                         if !allEffects().isEmpty {
                             Text("Combined Effects:")
                                 .font(.headline)
@@ -101,7 +94,6 @@ struct BuildScreen: View {
                 }
 
                 HStack(spacing: 20) {
-                    // Clear build
                     Button(action: {
                         buildModel.clearBuild()
                     }) {
@@ -116,7 +108,6 @@ struct BuildScreen: View {
                             )
                     }
 
-                    // Save build
                     Button(action: {
                         buildModel.saveBuild()
                     }) {
@@ -155,14 +146,11 @@ struct BuildScreen: View {
         return total
     }
 
-    /// Zwraca liczbę pancerza, jeśli znajdzie np. "Armor: 105" w tekście additionalInfo.
     private func parseArmor(from additionalInfo: String) -> Int? {
-        // Szukamy linii zaczynającej się od "Armor:"
-        // Proste podejście: splitted lines -> find line with "Armor:" -> extract number
         let lines = additionalInfo.components(separatedBy: "\n")
         for line in lines {
             if line.contains("Armor:") {
-                // np. "Armor: 105,"
+                // we search for example: "Armor: 105,"
                 if let numberString = line.components(separatedBy: "Armor:").last?
                     .trimmingCharacters(in: .whitespacesAndNewlines)
                     .components(separatedBy: CharacterSet.decimalDigits.inverted)
@@ -175,13 +163,12 @@ struct BuildScreen: View {
         return nil
     }
 
-    /// Zwraca np. "229-279", jeśli znajdzie "Damage: 229-279" w additionalInfo.
     private func parseDamage(from additionalInfo: String?) -> String? {
         guard let additionalInfo = additionalInfo else { return nil }
         let lines = additionalInfo.components(separatedBy: "\n")
         for line in lines {
             if line.contains("Damage:") {
-                // Przykładowa linia: "Damage: 229-279,"
+                // we search for example "Damage: 229-279,"
                 if let damageString = line.components(separatedBy: "Damage:").last?
                     .trimmingCharacters(in: .whitespacesAndNewlines)
                     .replacingOccurrences(of: ",", with: "") {
@@ -209,15 +196,12 @@ struct BuildScreen: View {
             let lines = item.additionalInfo.components(separatedBy: "\n")
             var shouldCollect = false
             for line in lines {
-                // Jeśli trafimy na linię zawierającą "Effect(s):" to od kolejnej zaczynamy zbierać
                 if line.contains("Effect(s):") {
                     shouldCollect = true
                     continue
                 }
-                // Zbieramy dopóki np. nie trafimy na pustą linię, "Slots:", "Armor:", "Damage:", itp.
-                // Tutaj proste podejście: dopóki się nie zaczyna od "Slots:" itp., to zbieramy
+    
                 if shouldCollect {
-                    // Koniec zbierania, jeśli trafimy na coś w stylu "Slots:", "Armor:", "Damage:..." itd.
                     if line.hasPrefix("Slots:") ||
                        line.hasPrefix("Armor:") ||
                        line.hasPrefix("Damage:") ||
@@ -225,7 +209,7 @@ struct BuildScreen: View {
                        line.isEmpty {
                         shouldCollect = false
                     } else {
-                        // Usuwamy nadmiar przecinków i spacji
+                        // clean string from commas and whitespaces
                         let cleanedLine = line.trimmingCharacters(in: .whitespacesAndNewlines)
                             .replacingOccurrences(of: ",", with: "")
                         if !cleanedLine.isEmpty {
@@ -239,8 +223,7 @@ struct BuildScreen: View {
         return effectsLines
     }
 
-    // MARK: - Build Slot View
-
+    // Build Slot View - function that helps creating slots for each piece of build
     @ViewBuilder
     private func buildSlotView(label: String, item: Item?) -> some View {
         HStack {

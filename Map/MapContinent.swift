@@ -134,7 +134,6 @@ struct ZoomableScrollView<Content: View>: UIViewRepresentable {
         scrollView.addSubview(hostingController.view)
         scrollView.contentSize = hostingController.view.frame.size
 
-        // Dodanie gestu tap
         let tapGesture = UITapGestureRecognizer(target: context.coordinator, action: #selector(Coordinator.handleTap(_:)))
         scrollView.addGestureRecognizer(tapGesture)
 

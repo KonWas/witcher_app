@@ -38,7 +38,6 @@ struct RegionMap: View {
                                 newMarkerPosition = pos
                             }
                         
-                        // Wyświetlanie istniejących znaczników dla danego regionu
                         ForEach(markerManager.markers) { marker in
                             MarkerView(marker: marker, mapSize: geo.size)
                                 .environmentObject(markerManager)
@@ -48,7 +47,6 @@ struct RegionMap: View {
             }
             .edgesIgnoringSafeArea(.all)
             
-            // Przyciski nawigacyjne
             VStack {
                 HStack {
                     Button(action: {
@@ -86,104 +84,101 @@ struct RegionMap: View {
                 Spacer()
             }
             
-            // Formularz dodawania znacznika
             if showingAddMarker, let pos = newMarkerPosition {
-                            VStack {
-                                Spacer()
-                                
-                                VStack(spacing: 20) {
-                                    Text("Add marker")
-                                        .font(.headline)
-                                        .foregroundColor(Color(red: 1, green: 0.94, blue: 0.74).opacity(0.70))
-                                    
-                                    // Pole na nazwę znacznika
-                                    TextField("Name", text: $tempMarkerName)
-                                        .foregroundColor(Color(red: 1, green: 0.94, blue: 0.74).opacity(0.70))
-                                        .padding(.horizontal, 20)
-                                        .padding(.vertical, 10)
-                                        .background(Color.black.opacity(0.30))
-                                        .cornerRadius(50)
-                                        .overlay(
-                                            RoundedRectangle(cornerRadius: 50)
-                                                .stroke(Color(red: 1, green: 0.94, blue: 0.74).opacity(0.70), lineWidth: 0.50)
-                                        )
-                                    
-                                    // Pole na opis znacznika
-                                    TextField("Description", text: $tempMarkerDescription)
-                                        .foregroundColor(Color(red: 1, green: 0.94, blue: 0.74).opacity(0.70))
-                                        .padding(.horizontal, 20)
-                                        .padding(.vertical, 10)
-                                        .background(Color.black.opacity(0.30))
-                                        .cornerRadius(50)
-                                        .overlay(
-                                            RoundedRectangle(cornerRadius: 50)
-                                                .stroke(Color(red: 1, green: 0.94, blue: 0.74).opacity(0.70), lineWidth: 0.50)
-                                        )
-                                    
-                                    HStack {
-                                        Button(action: {
-                                            showingAddMarker = false
-                                            tempMarkerName = ""
-                                            tempMarkerDescription = ""
-                                        }) {
-                                            Text("Cancel")
-                                                .foregroundColor(Color(red: 1, green: 0.94, blue: 0.74).opacity(0.70))
-                                                .padding(.horizontal, 20)
-                                                .padding(.vertical, 10)
-                                                .background(Color.black.opacity(0.30))
-                                                .cornerRadius(50)
-                                                .overlay(
-                                                    RoundedRectangle(cornerRadius: 50)
-                                                        .stroke(Color(red: 1, green: 0.94, blue: 0.74).opacity(0.70), lineWidth: 0.50)
-                                                )
-                                        }
-                                        
-                                        Spacer()
-                                        
-                                        Button(action: {
-                                            let newMarker = Marker(
-                                                id: UUID(),
-                                                name: tempMarkerName,
-                                                description: tempMarkerDescription,
-                                                xPosition: pos.x,
-                                                yPosition: pos.y
-                                            )
-                                            markerManager.addMarker(newMarker)
-                                            showingAddMarker = false
-                                            tempMarkerName = ""
-                                            tempMarkerDescription = ""
-                                        }) {
-                                            Text("Add")
-                                                .foregroundColor(Color(red: 1, green: 0.94, blue: 0.74).opacity(0.70))
-                                                .padding(.horizontal, 20)
-                                                .padding(.vertical, 10)
-                                                .background(Color.black.opacity(0.30))
-                                                .cornerRadius(50)
-                                                .overlay(
-                                                    RoundedRectangle(cornerRadius: 50)
-                                                        .stroke(Color(red: 1, green: 0.94, blue: 0.74).opacity(0.70), lineWidth: 0.50)
-                                                )
-                                        }
-                                        .disabled(tempMarkerName.isEmpty || tempMarkerDescription.isEmpty)
-                                    }
-                                }
-                                .padding()
-                                .background(Color.black.opacity(0.30))
-                                .cornerRadius(10)
-                                .overlay(
-                                    RoundedRectangle(cornerRadius: 10)
-                                        .stroke(Color(red: 1, green: 0.94, blue: 0.74).opacity(0.70), lineWidth: 0.50)
-                                )
-                                .padding()
+                VStack {
+                    Spacer()
+                    
+                    VStack(spacing: 20) {
+                        Text("Add marker")
+                            .font(.headline)
+                            .foregroundColor(Color(red: 1, green: 0.94, blue: 0.74).opacity(0.70))
+                        
+                        TextField("Name", text: $tempMarkerName)
+                            .foregroundColor(Color(red: 1, green: 0.94, blue: 0.74).opacity(0.70))
+                            .padding(.horizontal, 20)
+                            .padding(.vertical, 10)
+                            .background(Color.black.opacity(0.30))
+                            .cornerRadius(50)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 50)
+                                    .stroke(Color(red: 1, green: 0.94, blue: 0.74).opacity(0.70), lineWidth: 0.50)
+                            )
+                        
+                        TextField("Description", text: $tempMarkerDescription)
+                            .foregroundColor(Color(red: 1, green: 0.94, blue: 0.74).opacity(0.70))
+                            .padding(.horizontal, 20)
+                            .padding(.vertical, 10)
+                            .background(Color.black.opacity(0.30))
+                            .cornerRadius(50)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 50)
+                                    .stroke(Color(red: 1, green: 0.94, blue: 0.74).opacity(0.70), lineWidth: 0.50)
+                            )
+                        
+                        HStack {
+                            Button(action: {
+                                showingAddMarker = false
+                                tempMarkerName = ""
+                                tempMarkerDescription = ""
+                            }) {
+                                Text("Cancel")
+                                    .foregroundColor(Color(red: 1, green: 0.94, blue: 0.74).opacity(0.70))
+                                    .padding(.horizontal, 20)
+                                    .padding(.vertical, 10)
+                                    .background(Color.black.opacity(0.30))
+                                    .cornerRadius(50)
+                                    .overlay(
+                                        RoundedRectangle(cornerRadius: 50)
+                                            .stroke(Color(red: 1, green: 0.94, blue: 0.74).opacity(0.70), lineWidth: 0.50)
+                                    )
                             }
-                            .transition(.move(edge: .bottom))
-                            .animation(.easeInOut, value: showingAddMarker)
+                            
+                            Spacer()
+                            
+                            Button(action: {
+                                let newMarker = Marker(
+                                    id: UUID(),
+                                    name: tempMarkerName,
+                                    description: tempMarkerDescription,
+                                    xPosition: pos.x,
+                                    yPosition: pos.y
+                                )
+                                markerManager.addMarker(newMarker)
+                                showingAddMarker = false
+                                tempMarkerName = ""
+                                tempMarkerDescription = ""
+                            }) {
+                                Text("Add")
+                                    .foregroundColor(Color(red: 1, green: 0.94, blue: 0.74).opacity(0.70))
+                                    .padding(.horizontal, 20)
+                                    .padding(.vertical, 10)
+                                    .background(Color.black.opacity(0.30))
+                                    .cornerRadius(50)
+                                    .overlay(
+                                        RoundedRectangle(cornerRadius: 50)
+                                            .stroke(Color(red: 1, green: 0.94, blue: 0.74).opacity(0.70), lineWidth: 0.50)
+                                    )
+                            }
+                            .disabled(tempMarkerName.isEmpty || tempMarkerDescription.isEmpty)
                         }
                     }
-                    .background(Color.black)
-                    .ignoresSafeArea()
+                    .padding()
+                    .background(Color.black.opacity(0.30))
+                    .cornerRadius(10)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 10)
+                            .stroke(Color(red: 1, green: 0.94, blue: 0.74).opacity(0.70), lineWidth: 0.50)
+                    )
+                    .padding()
                 }
+                .transition(.move(edge: .bottom))
+                .animation(.easeInOut, value: showingAddMarker)
             }
+        }
+        .background(Color.black)
+        .ignoresSafeArea()
+    }
+}
 
 struct RegionMap_Previews: PreviewProvider {
     static var previews: some View {
